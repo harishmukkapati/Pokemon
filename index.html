@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  </style>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  
+
+  <div class="search-bar">
+    <div class="search-buttons">
+      <button class="scroll-button" onclick="scrollToTop()">Top of Pokédex</button>
+      <input type="text" id="search-input" placeholder="Search Pokemon" oninput="searchPokemon(this.value)">
+      <button class="scroll-button" onclick="scrollToBottom()">End of Pokédex</button>
+    </div>
+  </div>
+
+  <div class="display-area">
+    <div id="pokedex"></div>
+  </div>
+
+  <div id="mpopup" class="modal">
+    <div class="modal-content">
+      <button class="modal-button left-arrow" onclick="onModalPrevious()">&lt;</button>
+      <div id="mpopupBox">
+      <div id="modalContent"></div>
+    </div>
+    <button class="modal-button right-arrow" onclick="onModalNext()">&gt;</button>
+  </div>
+</div>
+
+  <div id="loading-message">Loading...</div>
+</body>
+
+</html>
