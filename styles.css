@@ -246,7 +246,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(5px); /* Add the backdrop-filter property with blur value */
+    backdrop-filter: blur(5px);
     padding: 10px;
     z-index: 999;
     display: flex;
@@ -269,7 +269,7 @@ body {
   }
   
   .display-area {
-    margin-top: 50px; /* Add margin to the display area to prevent content overlap */
+    margin-top: 50px;
   }
 
 
@@ -314,7 +314,3 @@ body {
   .scroll-button:hover {
     background-color: #1E88E5;
   }
-
-  
-
-  
