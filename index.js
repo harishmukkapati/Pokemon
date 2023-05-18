@@ -157,14 +157,6 @@ const onCardClick = (pokemonId) => {
     document.getElementById("mpopup").style.display = "block";
 };
 
-const onModalPrevious = () => {
-    // Handle previous content logic here
-  };
-  
-  const onModalNext = () => {
-    // Handle next content logic here
-  };
-
 // The modal content is built here
 function newCard(name, abilities, types, height) {
     let abilitiesDiv = abilities.map(ability => `<p>Ability: ${ability}</p>`).join("");
@@ -224,7 +216,7 @@ const searchPokemon = (value) => {
         pokedexEl.innerHTML += card;
       }
     });
-  }, 300); // Adjust the debounce delay as needed (e.g., 300ms)
+  }, 300); // Debounce delay
 };
 
 function scrollToBottom() {
