@@ -1,7 +1,8 @@
 # Pokémon
 This is a web application that uses the external PokéAPI to fetch Pokémon data and present them in a card based layout.
 
-### Javascript
+
+## Javascript
 1. Variables Initialization
    - The script starts with variable initialization. Variables like `limit`, `initialApiUrl`, `pokedex`, etc. are initializrd at the beginning
    - ```
@@ -104,6 +105,40 @@ This is a web application that uses the external PokéAPI to fetch Pokémon data
 14. scrollToBottom & scrollToTop functions
     - Helper functions to quickly scroll to the bottom ot top of the page.
 
-Some things I could improve on for this project is enabling multi-word search functionality, providing more relevant information within the modal, using the SVG image instead of the PNG image when available for the sprite (so that resolution of image was always high, no matter how far the user zoomed in), and also making the modal more aesthetically pleasing as well. Another important thing I could do is make the search faster. I could also incorporate information such as the evolution timeline and other things within the modal (such as the different sprites available within the API call). I was trying this at first (as you may see with the arrow buttons at each side of the modal), but ultimately ceased progress on this project since I was satisfied with where the project was, and wanted to look into other things. Another important aspect to consider is ADA requirements. The one factor I must work on (according to Lighthouse) is improving contrast so that it is easier to see the buttons (such as the "Top of Pokédex, End of Pokédex, and the types that are listed under the Pokémon's name. This received a score of 89 for performance, 95 for accessibility, 92 for best practices, and 90 for search engine optimization. Following the suggested guidelines by Lighthouse can significantly improve this project.
+## HTML
+1. Search bar
+   - Contains buttons to scroll to the top and bottom, and an input for searching Pokémon.
+2. display-area
+   - Whre all the Pokémon cards get displayed.
+3. mpopup
+   - A modal that pops up when a Pokémon card is clicked to display more information regarding the Pokémon.
+4. loading-message
+   - Displays a loading message when fetching new Pokémon data.
 
-## Harish
+## CSS
+1. General styles
+   - Styles for the body, text, buttons, and other elemetns.
+2. Animation
+   - Rotating and bounce animations for certain elements.
+3. Card styles
+   - Styles for the Pokémon cards.
+4. Modal styles
+   - Styles for the modal taht pops up
+
+## How to run this application
+1. Download the **pokemon.zip** file.
+2. Open the file.
+3. Load index.html in your web browser.
+
+### Note:
+- The Pokémon API URL is hardcoded to fetch 100 Pokémon at a time. Depending on the API limits, this may or may not work.
+- Some functionalities like `onModalNext` and `onModalPrevious` are referenced in the HTML but are not present in index.js. This might cause issues when you try to navigate to the next or previous Pokémon in the modal.
+- Ensure to add error handling for API calls for a robust application
+
+### How it could be improved
+- Enable multi-word search functionality
+- Provide more relavent information within the modal.
+  - Incorporate information such as evolution timeline in the modal.
+- Using SVG image instead of the PNG when available for the sprite.
+- Make the modal more aesthetically pleasing and match the design of the rest of the page.
+- Increase contrast so that items on page are even easier to distinctly see and so that site follows ADA requirements.
