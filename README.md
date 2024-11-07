@@ -123,7 +123,7 @@ This is a web application that uses the external PokéAPI to fetch Pokémon data
 3. Card styles
    - Styles for the Pokémon cards.
 4. Modal styles
-   - Styles for the modal taht pops up
+   - Styles for the modal that pops up
 
 ## How to run this application
 1. Download the **pokemon.zip** file.
